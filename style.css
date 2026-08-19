@@ -1,0 +1,430 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f8ff;
+    color: #172033;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+
+    background: linear-gradient(
+        135deg,
+        #0066ff,
+        #0044cc
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 5px 20px rgba(0, 68, 204, 0.25);
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+
+    padding: 10px 18px;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.home {
+    min-height: 100vh;
+    padding: 90px 8% 100px;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(0, 102, 255, 0.12),
+            transparent 35%
+        ),
+        #f4f8ff;
+}
+
+
+/* HERO */
+
+.hero {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+
+    background: #e3edff;
+    color: #0066ff;
+
+    padding: 7px 16px;
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 6vw, 65px);
+    line-height: 1.15;
+    font-weight: 800;
+
+    color: #172033;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #0066ff;
+}
+
+.hero p {
+    max-width: 680px;
+    margin: auto;
+
+    color: #68758a;
+    font-size: 16px;
+}
+
+
+/* =========================
+   RECOMMENDATION
+========================= */
+
+.recommendation {
+    max-width: 900px;
+    margin: 75px auto 0;
+}
+
+.recommendation h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #172033;
+}
+
+.subtitle {
+    text-align: center;
+    color: #7b8799;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+
+/* LINK LIST */
+
+.link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* CARD */
+
+.recommend-card {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px 22px;
+
+    background: white;
+
+    border: 1px solid #e3eaf5;
+    border-radius: 15px;
+
+    text-decoration: none;
+    color: inherit;
+
+    box-shadow: 0 5px 20px rgba(20, 60, 120, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.recommend-card:hover {
+    transform: translateY(-5px) translateX(5px);
+
+    border-color: #0066ff;
+
+    box-shadow:
+        0 12px 30px rgba(0, 102, 255, 0.15);
+}
+
+
+/* ICON */
+
+.icon {
+    min-width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #edf4ff;
+
+    border-radius: 13px;
+
+    font-size: 26px;
+
+    transition: 0.3s;
+}
+
+.recommend-card:hover .icon {
+    background: #0066ff;
+    transform: rotate(-5deg) scale(1.05);
+}
+
+
+/* CARD TEXT */
+
+.recommend-card h3 {
+    font-size: 17px;
+    margin-bottom: 3px;
+    color: #172033;
+}
+
+.recommend-card p {
+    color: #7a8698;
+    font-size: 13px;
+}
+
+
+/* ARROW */
+
+.arrow {
+    margin-left: auto;
+
+    font-size: 25px;
+    color: #0066ff;
+
+    transition: 0.3s;
+}
+
+.recommend-card:hover .arrow {
+    transform: translateX(6px);
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    padding: 100px 8%;
+    background: white;
+}
+
+.section-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-container h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.section-container p {
+    color: #6e7a8d;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding: 100px 8%;
+
+    background: linear-gradient(
+        135deg,
+        #0066ff,
+        #003aa8
+    );
+
+    color: white;
+}
+
+.contact .badge {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 25px;
+}
+
+
+/* BUTTON */
+
+.contact-button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: white;
+    color: #0066ff;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #071426;
+    color: #8d9aae;
+
+    text-align: center;
+
+    padding: 22px;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-menu {
+        gap: 0;
+    }
+
+    .nav-menu a {
+        padding: 8px 9px;
+        font-size: 13px;
+    }
+
+    .home {
+        padding: 65px 5% 80px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .recommendation h2 {
+        font-size: 27px;
+    }
+
+    .recommend-card {
+        padding: 16px;
+        gap: 13px;
+    }
+
+    .icon {
+        min-width: 45px;
+        height: 45px;
+        font-size: 21px;
+    }
+
+    .recommend-card h3 {
+        font-size: 14px;
+    }
+
+    .recommend-card p {
+        font-size: 11px;
+    }
+
+    .arrow {
+        font-size: 20px;
+    }
+
+    .section-container h2 {
+        font-size: 30px;
+    }
+}
+
+
